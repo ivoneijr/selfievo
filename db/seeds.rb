@@ -61,3 +61,26 @@ personCoachC = Person.new(address:coachAdd,name: 'Diego',phone:'51 882391092',we
 userCoachC = User.new(party:personCoachC,email:'coachDiego@gmail.com',password:'ERROR' )
 coachC = Coach.create(user: userCoachC)
 coachC.pupils<<pupilF
+
+
+
+
+
+assessment = Assessment.create(subscapularis: 10, 
+							triceps: 3, 
+							chest: 23,
+							axilar: 34,
+							supra: 44,
+							abs: 98,
+							thigh: 59, 
+							height: 1.98, 
+							weight: 114, 
+							coach: coachB, 
+							pupil: pupilF )
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<h1>Listing assessments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subscapularis</th>
+      <th>Triceps</th>
+      <th>Chest</th>
+      <th>Axilar</th>
+      <th>Supra</th>
+      <th>Abs</th>
+      <th>Thigh</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Bmi</th>
+      <th>Bodyfat</th>
+      <th>Coach</th>
+      <th>Gym</th>
+      <th>Pupil</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assessments.each do |assessment| %>
+      <tr>
+        <td><%= assessment.subscapularis %></td>
+        <td><%= assessment.triceps %></td>
+        <td><%= assessment.chest %></td>
+        <td><%= assessment.axilar %></td>
+        <td><%= assessment.supra %></td>
+        <td><%= assessment.abs %></td>
+        <td><%= assessment.thigh %></td>
+        <td><%= assessment.height %></td>
+        <td><%= assessment.weight %></td>
+        <td><%= assessment.bmi %></td>
+        <td><%= assessment.bodyfat %></td>
+        <td><%= assessment.coach %></td>
+        <td><%= assessment.gym %></td>
+        <td><%= assessment.pupil %></td>
+        <td><%= link_to 'Show', assessment %></td>
+        <td><%= link_to 'Edit', edit_assessment_path(assessment) %></td>
+        <td><%= link_to 'Destroy', assessment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Assessment', new_assessment_path %>

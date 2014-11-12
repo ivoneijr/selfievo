@@ -19,6 +19,6 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
  	inflect.acronym 'API'
 	inflect.acronym 'V1'
 
-  inflect.irregular 'dashboard', 'dashboard'
+	inflect.irregular 'dashboard', 'dashboard'
 
 end

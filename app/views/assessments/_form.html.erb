@@ -1,0 +1,73 @@
+<%= form_for(@assessment) do |f| %>
+  <% if @assessment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@assessment.errors.count, "error") %> prohibited this assessment from being saved:</h2>
+
+      <ul>
+      <% @assessment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subscapularis %><br>
+    <%= f.text_field :subscapularis %>
+  </div>
+  <div class="field">
+    <%= f.label :triceps %><br>
+    <%= f.text_field :triceps %>
+  </div>
+  <div class="field">
+    <%= f.label :chest %><br>
+    <%= f.text_field :chest %>
+  </div>
+  <div class="field">
+    <%= f.label :axilar %><br>
+    <%= f.text_field :axilar %>
+  </div>
+  <div class="field">
+    <%= f.label :supra %><br>
+    <%= f.text_field :supra %>
+  </div>
+  <div class="field">
+    <%= f.label :abs %><br>
+    <%= f.text_field :abs %>
+  </div>
+  <div class="field">
+    <%= f.label :thigh %><br>
+    <%= f.text_field :thigh %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :bmi %><br>
+    <%= f.text_field :bmi %>
+  </div>
+  <div class="field">
+    <%= f.label :bodyfat %><br>
+    <%= f.text_field :bodyfat %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_id %><br>
+    <%= f.text_field :coach_id %>
+  </div>
+  <div class="field">
+    <%= f.label :gym_id %><br>
+    <%= f.text_field :gym_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pupil_id %><br>
+    <%= f.text_field :pupil_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

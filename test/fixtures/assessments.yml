@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subscapularis: 9.99
+  triceps: 9.99
+  chest: 9.99
+  axilar: 9.99
+  supra: 9.99
+  abs: 9.99
+  thigh: 9.99
+  height: 9.99
+  weight: 9.99
+  bmi: 9.99
+  bodyfat: 9.99
+  coach_id: 
+  gym_id: 
+  pupil_id: 
+
+two:
+  subscapularis: 9.99
+  triceps: 9.99
+  chest: 9.99
+  axilar: 9.99
+  supra: 9.99
+  abs: 9.99
+  thigh: 9.99
+  height: 9.99
+  weight: 9.99
+  bmi: 9.99
+  bodyfat: 9.99
+  coach_id: 
+  gym_id: 
+  pupil_id: 
