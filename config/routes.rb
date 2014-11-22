@@ -1,5 +1,7 @@
 Selfievolution::Application.routes.draw do
 
+  resources :images
+
   get '/onepage', :to => redirect('/onepage.html')
   root "dashboard#index"
 
